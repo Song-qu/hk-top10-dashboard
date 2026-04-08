@@ -1,0 +1,84 @@
+{
+  "2026/04/02": [
+    {
+      "rank": 1,
+      "name": "阿里巴巴-Ｗ",
+      "code": "09988.HK",
+      "close": 118.5,
+      "chg_pct": -3.42,
+      "amount_yi": 112.73
+    },
+    {
+      "rank": 2,
+      "name": "腾讯控股",
+      "code": "00700.HK",
+      "close": 489.2,
+      "chg_pct": -1.49,
+      "amount_yi": 83.24
+    },
+    {
+      "rank": 3,
+      "name": "小米集团-Ｗ",
+      "code": "01810.HK",
+      "close": 30.88,
+      "chg_pct": -3.56,
+      "amount_yi": 80.32
+    },
+    {
+      "rank": 4,
+      "name": "中国海洋石油",
+      "code": "00883.HK",
+      "close": 27.02,
+      "chg_pct": 0.22,
+      "amount_yi": 49.69
+    },
+    {
+      "rank": 5,
+      "name": "长飞光纤光缆",
+      "code": "06869.HK",
+      "close": 189.0,
+      "chg_pct": 1.67,
+      "amount_yi": 47.92
+    },
+    {
+      "rank": 6,
+      "name": "吉利汽车",
+      "code": "00175.HK",
+      "close": 23.82,
+      "chg_pct": 8.37,
+      "amount_yi": 43.7
+    },
+    {
+      "rank": 7,
+      "name": "美团-Ｗ",
+      "code": "03690.HK",
+      "close": 80.25,
+      "chg_pct": -2.07,
+      "amount_yi": 37.63
+    },
+    {
+      "rank": 8,
+      "name": "中芯国际",
+      "code": "00981.HK",
+      "close": 51.0,
+      "chg_pct": -3.5,
+      "amount_yi": 33.33
+    },
+    {
+      "rank": 9,
+      "name": "泡泡玛特",
+      "code": "09992.HK",
+      "close": 141.8,
+      "chg_pct": -2.41,
+      "amount_yi": 29.98
+    },
+    {
+      "rank": 10,
+      "name": "比亚迪股份",
+      "code": "01211.HK",
+      "close": 103.9,
+      "chg_pct": -0.76,
+      "amount_yi": 26.83
+    }
+  ]
+}

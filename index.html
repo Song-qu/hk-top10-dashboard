@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>港股成交额 Top10</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    font-family: -apple-system,"PingFang SC","Microsoft YaHei",sans-serif;
+    background: #F0F2F5;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 30px 16px;
+  }
+  .card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    width: 100%;
+    max-width: 520px;
+    padding: 32px 24px 20px;
+  }
+  .title-row {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    margin-bottom: 4px;
+  }
+  .title-cn { font-size:28px; font-weight:800; color:#1a1a2e; }
+  .title-top10 { font-size:28px; font-weight:800; color:#4472C4; }
+  .date-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 4px;
+  }
+  .date { font-size:17px; font-weight:700; color:#4472C4; }
+  .date-nav { display:flex; gap:6px; }
+  .date-nav button {
+    background:#EBF0F7; border:none; border-radius:6px;
+    width:28px; height:28px; font-size:14px; color:#4472C4;
+    cursor:pointer; display:flex; align-items:center; justify-content:center;
+    transition: background 0.2s;
+  }
+  .date-nav button:hover { background:#D6E0F0; }
+  .date-nav button:disabled { opacity:0.3; cursor:default; }
+  .divider {
+    height:2.5px;
+    background: linear-gradient(90deg,#4472C4 0%,transparent 100%);
+    border-radius:2px; margin:12px 0 16px; opacity:0.4;
+  }
+  table { width:100%; border-collapse:separate; border-spacing:0; }
+  thead th {
+    background:#4472C4; color:#fff; font-size:12px; font-weight:600;
+    padding:10px 6px; text-align:center; letter-spacing:0.5px;
+  }
+  thead th:first-child { border-radius:8px 0 0 0; }
+  thead th:last-child { border-radius:0 8px 0 0; }
+  tbody tr { transition:background 0.15s; }
+  tbody tr:nth-child(odd) { background:#fff; }
+  tbody tr:nth-child(even) { background:#F8FAFC; }
+  tbody tr:hover { background:#EDF2F8; }
+  tbody td {
+    padding:12px 6px; text-align:center; vertical-align:middle;
+    border-bottom:1px solid #F0F0F0; font-size:14px;
+  }
+  .rank-cell { width:44px; }
+  .rank {
+    display:inline-flex; align-items:center; justify-content:center;
+    width:28px; height:28px; border-radius:50%; font-weight:800; font-size:14px;
+  }
+  .rank-top { background:#4472C4; color:#fff; }
+  .rank-normal { color:#8E99A4; font-size:17px; }
+  .name-cell { text-align:left; padding-left:8px; min-width:120px; }
+  .stock-name { font-weight:700; font-size:14px; color:#1a1a2e; line-height:1.3; }
+  .stock-code { font-size:11px; color:#95A5A6; margin-top:1px; }
+  .price-cell { font-weight:500; color:#1a1a2e; min-width:70px; }
+  .chg-cell { font-weight:700; min-width:75px; }
+  .chg-up { color:#00B894; }
+  .chg-down { color:#E74C3C; }
+  .amt-cell { font-weight:500; color:#1a1a2e; min-width:80px; }
+  .footer {
+    margin-top:16px; font-size:11px; color:#B0B8C4; line-height:1.6;
+  }
+  @keyframes fadeIn {
+    from { opacity:0; transform:translateY(8px); }
+    to { opacity:1; transform:translateY(0); }
+  }
+  tbody tr { animation:fadeIn 0.3s ease forwards; opacity:0; }
+  tbody tr:nth-child(1)  { animation-delay:0.03s; }
+  tbody tr:nth-child(2)  { animation-delay:0.06s; }
+  tbody tr:nth-child(3)  { animation-delay:0.09s; }
+  tbody tr:nth-child(4)  { animation-delay:0.12s; }
+  tbody tr:nth-child(5)  { animation-delay:0.15s; }
+  tbody tr:nth-child(6)  { animation-delay:0.18s; }
+  tbody tr:nth-child(7)  { animation-delay:0.21s; }
+  tbody tr:nth-child(8)  { animation-delay:0.24s; }
+  tbody tr:nth-child(9)  { animation-delay:0.27s; }
+  tbody tr:nth-child(10) { animation-delay:0.30s; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="header">
+    <div class="title-row">
+      <span class="title-cn">港股成交额</span>
+      <span class="title-top10">Top10</span>
+    </div>
+    <div class="date-row">
+      <span class="date" id="currentDate"></span>
+      <div class="date-nav">
+        <button id="prevBtn" onclick="nav(-1)">&#9664;</button>
+        <button id="nextBtn" onclick="nav(1)">&#9654;</button>
+      </div>
+    </div>
+  </div>
+  <div class="divider"></div>
+  <table>
+    <thead>
+      <tr>
+        <th class="rank-cell">序号</th><th>名称代码</th>
+        <th>最新价</th><th>涨跌幅</th><th>成交额</th>
+      </tr>
+    </thead>
+    <tbody id="tb"></tbody>
+  </table>
+  <div class="footer">
+    数据来源：东方财富/akshare，已剔除ETF &nbsp; 单位：港元<br>
+    最后更新：<span id="lu"></span> &nbsp;|&nbsp;
+    共 <span id="dc"></span> 个交易日
+  </div>
+</div>
+<script>
+const DATA = {"2026/04/02": [{"rank": 1, "name": "阿里巴巴-Ｗ", "code": "09988.HK", "close": 118.5, "chg_pct": -3.42, "amount_yi": 112.73}, {"rank": 2, "name": "腾讯控股", "code": "00700.HK", "close": 489.2, "chg_pct": -1.49, "amount_yi": 83.24}, {"rank": 3, "name": "小米集团-Ｗ", "code": "01810.HK", "close": 30.88, "chg_pct": -3.56, "amount_yi": 80.32}, {"rank": 4, "name": "中国海洋石油", "code": "00883.HK", "close": 27.02, "chg_pct": 0.22, "amount_yi": 49.69}, {"rank": 5, "name": "长飞光纤光缆", "code": "06869.HK", "close": 189.0, "chg_pct": 1.67, "amount_yi": 47.92}, {"rank": 6, "name": "吉利汽车", "code": "00175.HK", "close": 23.82, "chg_pct": 8.37, "amount_yi": 43.7}, {"rank": 7, "name": "美团-Ｗ", "code": "03690.HK", "close": 80.25, "chg_pct": -2.07, "amount_yi": 37.63}, {"rank": 8, "name": "中芯国际", "code": "00981.HK", "close": 51.0, "chg_pct": -3.5, "amount_yi": 33.33}, {"rank": 9, "name": "泡泡玛特", "code": "09992.HK", "close": 141.8, "chg_pct": -2.41, "amount_yi": 29.98}, {"rank": 10, "name": "比亚迪股份", "code": "01211.HK", "close": 103.9, "chg_pct": -0.76, "amount_yi": 26.83}]};
+const keys = Object.keys(DATA).sort();
+let idx = keys.length - 1;
+
+function nav(d) {
+  idx = Math.max(0, Math.min(keys.length-1, idx+d));
+  render();
+}
+
+function render() {
+  const dt = keys[idx], items = DATA[dt];
+  document.getElementById('currentDate').textContent = dt;
+  document.getElementById('prevBtn').disabled = (idx===0);
+  document.getElementById('nextBtn').disabled = (idx===keys.length-1);
+  document.getElementById('lu').textContent = keys[keys.length-1];
+  document.getElementById('dc').textContent = keys.length;
+  document.getElementById('tb').innerHTML = items.map((s,i) => {
+    const r = i+1;
+    const rc = r<=3 ? 'rank rank-top' : 'rank rank-normal';
+    const cc = s.chg_pct>=0 ? 'chg-up' : 'chg-down';
+    const cs = (s.chg_pct>=0?'+':'')+s.chg_pct.toFixed(2)+'%';
+    return `<tr>
+      <td class="rank-cell"><span class="${rc}">${r}</span></td>
+      <td class="name-cell"><div class="stock-name">${s.name}</div><div class="stock-code">${s.code}</div></td>
+      <td class="price-cell">${s.close.toFixed(2)}</td>
+      <td class="chg-cell ${cc}">${cs}</td>
+      <td class="amt-cell">${s.amount_yi.toFixed(2)}亿</td>
+    </tr>`;
+  }).join('');
+}
+render();
+</script>
+</body>
+</html>
