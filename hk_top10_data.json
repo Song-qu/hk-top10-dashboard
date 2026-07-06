@@ -19892,5 +19892,407 @@
       "chg_pct": -2.38,
       "amount_yi": 10.32
     }
+  ],
+  "2026/07/06": [
+    {
+      "rank": 1,
+      "name": "腾讯控股",
+      "code": "00700.HK",
+      "close": 452.0,
+      "chg_pct": 4.82,
+      "amount_yi": 185.2
+    },
+    {
+      "rank": 2,
+      "name": "中芯国际",
+      "code": "00981.HK",
+      "close": 75.75,
+      "chg_pct": -2.38,
+      "amount_yi": 121.2
+    },
+    {
+      "rank": 3,
+      "name": "建滔积层板",
+      "code": "01888.HK",
+      "close": 73.85,
+      "chg_pct": -12.55,
+      "amount_yi": 96.45
+    },
+    {
+      "rank": 4,
+      "name": "华虹宏力",
+      "code": "01347.HK",
+      "close": 178.0,
+      "chg_pct": 0.0,
+      "amount_yi": 90.0
+    },
+    {
+      "rank": 5,
+      "name": "长飞光纤光缆",
+      "code": "06869.HK",
+      "close": 171.5,
+      "chg_pct": -14.76,
+      "amount_yi": 83.68
+    },
+    {
+      "rank": 6,
+      "name": "阿里巴巴-Ｗ",
+      "code": "09988.HK",
+      "close": 95.95,
+      "chg_pct": 1.97,
+      "amount_yi": 77.67
+    },
+    {
+      "rank": 7,
+      "name": "建滔集团",
+      "code": "00148.HK",
+      "close": 89.2,
+      "chg_pct": -9.58,
+      "amount_yi": 52.76
+    },
+    {
+      "rank": 8,
+      "name": "智谱",
+      "code": "02513.HK",
+      "close": 1530.0,
+      "chg_pct": -14.67,
+      "amount_yi": 43.49
+    },
+    {
+      "rank": 9,
+      "name": "快手-Ｗ",
+      "code": "01024.HK",
+      "close": 46.0,
+      "chg_pct": 7.98,
+      "amount_yi": 39.41
+    },
+    {
+      "rank": 10,
+      "name": "小米集团-Ｗ",
+      "code": "01810.HK",
+      "close": 23.28,
+      "chg_pct": 1.39,
+      "amount_yi": 37.3
+    },
+    {
+      "rank": 11,
+      "name": "美团-Ｗ",
+      "code": "03690.HK",
+      "close": 74.95,
+      "chg_pct": 4.68,
+      "amount_yi": 37.14
+    },
+    {
+      "rank": 12,
+      "name": "比亚迪股份",
+      "code": "01211.HK",
+      "close": 83.8,
+      "chg_pct": -0.36,
+      "amount_yi": 30.43
+    },
+    {
+      "rank": 13,
+      "name": "信达生物",
+      "code": "01801.HK",
+      "close": 90.5,
+      "chg_pct": 3.08,
+      "amount_yi": 28.45
+    },
+    {
+      "rank": 14,
+      "name": "兆易创新",
+      "code": "03986.HK",
+      "close": 876.5,
+      "chg_pct": -4.47,
+      "amount_yi": 28.09
+    },
+    {
+      "rank": 15,
+      "name": "联想集团",
+      "code": "00992.HK",
+      "close": 20.46,
+      "chg_pct": -3.94,
+      "amount_yi": 26.58
+    },
+    {
+      "rank": 16,
+      "name": "泡泡玛特",
+      "code": "09992.HK",
+      "close": 152.7,
+      "chg_pct": -0.39,
+      "amount_yi": 22.95
+    },
+    {
+      "rank": 17,
+      "name": "中国宏桥",
+      "code": "01378.HK",
+      "close": 21.5,
+      "chg_pct": 2.97,
+      "amount_yi": 22.21
+    },
+    {
+      "rank": 18,
+      "name": "康方生物",
+      "code": "09926.HK",
+      "close": 101.9,
+      "chg_pct": -0.49,
+      "amount_yi": 20.85
+    },
+    {
+      "rank": 19,
+      "name": "网易",
+      "code": "09999.HK",
+      "close": 208.39999,
+      "chg_pct": 1.46,
+      "amount_yi": 20.66
+    },
+    {
+      "rank": 20,
+      "name": "壁仞科技",
+      "code": "06082.HK",
+      "close": 48.54,
+      "chg_pct": -5.38,
+      "amount_yi": 17.47
+    },
+    {
+      "rank": 21,
+      "name": "紫金矿业",
+      "code": "02899.HK",
+      "close": 31.2,
+      "chg_pct": 1.56,
+      "amount_yi": 17.24
+    },
+    {
+      "rank": 22,
+      "name": "中国人寿",
+      "code": "02628.HK",
+      "close": 29.52,
+      "chg_pct": 3.94,
+      "amount_yi": 17.16
+    },
+    {
+      "rank": 23,
+      "name": "优必选",
+      "code": "09880.HK",
+      "close": 98.0,
+      "chg_pct": -10.01,
+      "amount_yi": 17.11
+    },
+    {
+      "rank": 24,
+      "name": "汇丰控股",
+      "code": "00005.HK",
+      "close": 152.0,
+      "chg_pct": 0.0,
+      "amount_yi": 17.08
+    },
+    {
+      "rank": 25,
+      "name": "友邦保险",
+      "code": "01299.HK",
+      "close": 74.0,
+      "chg_pct": 1.02,
+      "amount_yi": 17.02
+    },
+    {
+      "rank": 26,
+      "name": "建设银行",
+      "code": "00939.HK",
+      "close": 7.85,
+      "chg_pct": 0.9,
+      "amount_yi": 15.94
+    },
+    {
+      "rank": 27,
+      "name": "药明生物",
+      "code": "02269.HK",
+      "close": 37.8,
+      "chg_pct": 0.64,
+      "amount_yi": 15.93
+    },
+    {
+      "rank": 28,
+      "name": "中国移动",
+      "code": "00941.HK",
+      "close": 77.15,
+      "chg_pct": 0.59,
+      "amount_yi": 15.32
+    },
+    {
+      "rank": 29,
+      "name": "中国海洋石油",
+      "code": "00883.HK",
+      "close": 21.04,
+      "chg_pct": -0.66,
+      "amount_yi": 15.19
+    },
+    {
+      "rank": 30,
+      "name": "中国平安",
+      "code": "02318.HK",
+      "close": 52.85,
+      "chg_pct": 1.54,
+      "amount_yi": 15.16
+    },
+    {
+      "rank": 31,
+      "name": "三生制药",
+      "code": "01530.HK",
+      "close": 19.45,
+      "chg_pct": -0.51,
+      "amount_yi": 14.8
+    },
+    {
+      "rank": 32,
+      "name": "百济神州",
+      "code": "06160.HK",
+      "close": 190.5,
+      "chg_pct": 4.04,
+      "amount_yi": 14.75
+    },
+    {
+      "rank": 33,
+      "name": "石药集团",
+      "code": "01093.HK",
+      "close": 8.23,
+      "chg_pct": 2.87,
+      "amount_yi": 14.28
+    },
+    {
+      "rank": 34,
+      "name": "胜宏科技",
+      "code": "02476.HK",
+      "close": 272.0,
+      "chg_pct": -8.42,
+      "amount_yi": 13.97
+    },
+    {
+      "rank": 35,
+      "name": "科伦博泰生物",
+      "code": "06990.HK",
+      "close": 523.5,
+      "chg_pct": 4.91,
+      "amount_yi": 13.7
+    },
+    {
+      "rank": 36,
+      "name": "舜宇光学科技",
+      "code": "02382.HK",
+      "close": 55.7,
+      "chg_pct": -7.24,
+      "amount_yi": 12.78
+    },
+    {
+      "rank": 37,
+      "name": "中国生物制药",
+      "code": "01177.HK",
+      "close": 5.05,
+      "chg_pct": 6.54,
+      "amount_yi": 12.67
+    },
+    {
+      "rank": 38,
+      "name": "宁德时代",
+      "code": "03750.HK",
+      "close": 668.0,
+      "chg_pct": -1.11,
+      "amount_yi": 12.65
+    },
+    {
+      "rank": 39,
+      "name": "澜起科技",
+      "code": "06809.HK",
+      "close": 372.0,
+      "chg_pct": -2.77,
+      "amount_yi": 12.24
+    },
+    {
+      "rank": 40,
+      "name": "挚达科技",
+      "code": "02650.HK",
+      "close": 29.9,
+      "chg_pct": 47.29,
+      "amount_yi": 12.09
+    },
+    {
+      "rank": 41,
+      "name": "ASMPT",
+      "code": "00522.HK",
+      "close": 195.7,
+      "chg_pct": -4.44,
+      "amount_yi": 11.57
+    },
+    {
+      "rank": 42,
+      "name": "地平线机器人-Ｗ",
+      "code": "09660.HK",
+      "close": 4.49,
+      "chg_pct": -4.06,
+      "amount_yi": 11.31
+    },
+    {
+      "rank": 43,
+      "name": "荣昌生物",
+      "code": "09995.HK",
+      "close": 87.85,
+      "chg_pct": 0.06,
+      "amount_yi": 11.25
+    },
+    {
+      "rank": 44,
+      "name": "香港交易所",
+      "code": "00388.HK",
+      "close": 376.39999,
+      "chg_pct": 0.37,
+      "amount_yi": 10.6
+    },
+    {
+      "rank": 45,
+      "name": "药明康德",
+      "code": "02359.HK",
+      "close": 155.5,
+      "chg_pct": -0.38,
+      "amount_yi": 10.35
+    },
+    {
+      "rank": 46,
+      "name": "吉利汽车",
+      "code": "00175.HK",
+      "close": 18.64,
+      "chg_pct": 1.86,
+      "amount_yi": 10.25
+    },
+    {
+      "rank": 47,
+      "name": "工商银行",
+      "code": "01398.HK",
+      "close": 6.43,
+      "chg_pct": 0.0,
+      "amount_yi": 10.07
+    },
+    {
+      "rank": 48,
+      "name": "中国银行",
+      "code": "03988.HK",
+      "close": 4.82,
+      "chg_pct": 0.21,
+      "amount_yi": 9.56
+    },
+    {
+      "rank": 49,
+      "name": "埃斯顿",
+      "code": "02715.HK",
+      "close": 23.32,
+      "chg_pct": -8.55,
+      "amount_yi": 9.49
+    },
+    {
+      "rank": 50,
+      "name": "小鹏集团-Ｗ",
+      "code": "09868.HK",
+      "close": 52.85,
+      "chg_pct": 2.22,
+      "amount_yi": 9.2
+    }
   ]
 }
